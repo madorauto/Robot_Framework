@@ -58,5 +58,3 @@ Verify Mutiple Loss With SwedBank
   FOR  ${countrycodes}  IN  @{countrycodes}
     CurrConCalculator.Verify Loss With SwedBank  ${countrycodes}
   END
-
-Test
