@@ -8,3 +8,6 @@ Start Test
   Open Browser  ${url}  ${browser}
   Maximize Browser Window
   Sleep  5s
+
+End Test
+  Close All Browsers

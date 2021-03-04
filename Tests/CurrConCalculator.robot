@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 Resource  ../Resources/Common.robot
 Resource  ../Resources/Data/CurrConCalculator.robot
 Suite Setup  Start Test  ${url}  ${browser}
-
+Suite Teardown  End Test
 
 *** Test Cases ***
 Input Sell
@@ -49,6 +49,7 @@ Verify Loss With SwedBank
   #Given: User is in the Currency Conversion Calculator
   #Then: Loss With SwedBank will be calculated
   CurrConCalculator.Verify Loss With SwedBank  ${countrycode}
+
 
 
 Verify Mutiple Loss With SwedBank
